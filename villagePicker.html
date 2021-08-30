@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="pickerStyler/pickerStyler.css"
+    />
+    <title>Village Picker</title>
+    <link
+      href="https://www.jqueryscript.net/css/jquerysctipttop.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul id="topbar">
+          <li class="navpage" class="active"><a href="index.html">Home</a></li>
+          <li class="navpage"><a href="newpage.html">New Page</a></li>
+          <li class="navpage"><a href="villagePicker.html">Village Picker</a></li>
+          <li class="navpage" class="active">
+            <a href="register.html">Register</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Spin to see where your ninja is from!</h1>
+      <div class="jquery-script-center">
+        <div id="carbon-block"></div>
+        <div class="jquery-script-clear"></div>
+      </div>
+    </div><br>
+    <div class="mainbox" id="mainbox">
+      <div class="box" id="box">
+        <div class="box1">
+          <span class="font span1"><b>Land of the Waves</b></span>
+          <span class="font span2"><b>Land of Sky</b></span>
+          <span class="font span3"><b>Land of Water</b></span>
+          <span class="font span4"><b>Land of Sound</b></span>
+          <span class="font span5"
+            ><b>Land of Earth <br /></span>
+        </div>
+        <div class="box2">
+          <span class="font span1"><b>Land of Fire</b></span>
+          <span class="font span2"
+            ><b
+              >Land of <br />
+              Wind</b
+            ></span
+          >
+          <span class="font span3"><b>Land of Iron</b></span>
+          <span class="font span4"><b>Land of Snow</b></span>
+          <span class="font span5"
+            ><b
+              >Land of<br />
+              Lightning</b
+            ></span
+          >
+        </div>
+      </div>
+      <button class="spin" onclick="spin()">SPIN</button>
+    </div>
+    <audio
+      controls="controls"
+      id="applause"
+      src="./pickerStyler/applause.mp3"
+      type="audio/mp3"
+    ></audio>
+    <audio
+      controls="controls"
+      id="wheel"
+      src="./pickerStyler/wheel.mp3"
+      type="audio/mp3"
+    ></audio>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/pickerStyler/pickerScript.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-36251023-1']);
+      _gaq.push(['_setDomainName', 'jqueryscript.net']);
+      _gaq.push(['_trackPageview']);
+
+      (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src =
+          ('https:' == document.location.protocol
+            ? 'https://ssl'
+            : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script>
+      try {
+        fetch(
+          new Request(
+            'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+            { method: 'HEAD', mode: 'no-cors' }
+          )
+        )
+          .then(function (response) {
+            return true;
+          })
+          .catch(function (e) {
+            var carbonScript = document.createElement('script');
+            carbonScript.src =
+              '//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet';
+            carbonScript.id = '_carbonads_js';
+            document.getElementById('carbon-block').appendChild(carbonScript);
+          });
+      } catch (error) {
+        console.log(error);
+      }
+    </script>
+  </body>
+</html>

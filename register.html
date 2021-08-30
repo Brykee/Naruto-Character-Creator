@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <link rel="stylesheet" href="styles/stylesheet.css" />
+  </head>
+
+  <header>
+    <nav>
+      <ul id="topbar">
+        <li class="navpage" class="active"><a href="index.html">Home</a></li>
+        <li class="navpage"><a href="newpage.html">New Page</a></li>
+        <li class="navpage"><a href="villagePicker.html">Village Picker</a></li>
+        <li class="navpage" class="active">
+          <a href="register.html">Register</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body>
+    <!-- inline CSS  -->
+    <h1 style="color: rgb(19, 54, 54)">Submit your design!</h1>
+    <form action="register.html" method="GET" target="_self">
+      <input type="file" name="charFile" required /> <br />
+      Character's First-name:
+      <input
+        class="typefields"
+        type="text"
+        name="firstname"
+        required
+        maxlength="10"
+      /><br />
+      Character's Last-name:
+      <input class="typefields" type="text" name="lastname" required /><br />
+      Email:
+      <input class="typefields" type="email" name="email" required /><br />
+
+      Birthday: <input class="typefields" type="date" name="birthday" />
+      <br />
+      <div class="formbuttons">
+        Gender:<br />
+        <input type="radio" name="gender" value="Male" />Male<br />
+        <input type="radio" name="gender" value="Female" />Female<br />
+        <input type="radio" name="gender" value="Other" />Other<br />
+        Pets:<br />
+        <input type="checkbox" name="cat" /> Cats<br />
+        <input type="checkbox" name="dog" /> Dogs<br />
+
+        Cars: <br />
+        <select name="cars">
+          <option value="Volvo" name="volvo">Volvo</option>
+          <option value="Audi" name="audi">Audi</option>
+          <option value="Toyota" name="Toyota">Toyota</option></select
+        ><br />
+        <input id="cb" type="checkbox" name="verify" />I verify that I am
+        human<br />
+        <input id="submit" type="submit" value="Register" />
+        <input type="reset" />
+      </div>
+    </form>
+    <script type="text/javascript" src="register.js"></script>
+  </body>
+</html>
