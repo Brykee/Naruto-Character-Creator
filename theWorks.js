@@ -265,3 +265,15 @@ let resetButton = document.getElementById('restartBtn');
 playButton.addEventListener('click', start);
 pauseButton.addEventListener('click', pause);
 resetButton.addEventListener('click', reset);
+
+//
+// API
+//
+
+fetch('https://unsplash.it/400/200')
+  .then((res) => res.blob())
+  .then((blob) => {
+    let img = document.createElement('img');
+    img.src = URL.createObjectURL(blob);
+    document.querySelector('.item2').appendChild(img);
+  });
