@@ -182,4 +182,9 @@ div#controls {
 .buttons {
   padding: 10px;
 }
+
+.item2 p,
+h3 {
+  margin: 35px;
+}
 /*# sourceMappingURL=stylesheet.css.map */

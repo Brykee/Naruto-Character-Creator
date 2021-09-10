@@ -275,5 +275,5 @@ fetch('https://unsplash.it/400/200')
   .then((blob) => {
     let img = document.createElement('img');
     img.src = URL.createObjectURL(blob);
-    document.querySelector('.item2').appendChild(img);
+    document.querySelector('.item4').appendChild(img);
   });
