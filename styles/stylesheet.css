@@ -49,6 +49,23 @@
   font-size: 25px;
 }
 
+/* Medium screen devices (768px and above) */
+@media only screen and (max-width: 1000px) {
+  .grid-container {
+    display: contents;
+        grid-template-areas: 'header header header header header header' 'menu main main main right right' 'menu footer footer footer footer footer';
+    grid-gap: 5px;
+    background-color: #333;
+    padding: 10px;
+  }
+  .grid-container > div {
+    background-color: rgba(51, 51, 51, 0.103);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 25px;
+  }
+}
+
 html {
   background: url(https://wallpapercave.com/wp/Quvu2gR.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -98,13 +115,23 @@ body {
   text-decoration: none;
 }
 
+/* Medium screen devices (768px and above) */
+@media only screen and (max-width: 1000px) {
+  .navpage {
+    float: center;
+  }
+  .navpage:hover {
+    background-color: #333;
+    padding: 0px;
+  }
+}
+
 /* pseudo-elements create */
 /* p::after {
   content: '?';
 } */
 /* Specificity 0,0,0,0. Inline-styles,id,class,element */
 body h1 {
-  color: #333;
   text-align: center;
   padding: 5px;
 }
@@ -120,11 +147,13 @@ table {
   border: 2px solid #333;
   width: 300px;
   height: auto;
+  margin: 10px;
 }
 
 .Gaara {
   width: 10px;
   height: 10px;
+  margin-left: 30px;
 }
 
 #goonDune {
@@ -155,8 +184,8 @@ form .formbuttons {
 }
 
 .typefields:hover {
-  background: yellow;
-  color: red;
+  background: rgba(255, 255, 0, 0.11);
+  color: black;
 }
 
 .trap {
@@ -185,6 +214,6 @@ div#controls {
 
 .item2 p,
 h3 {
-  margin: 35px;
+  margin: 35px 35px 35px 35px;
 }
 /*# sourceMappingURL=stylesheet.css.map */

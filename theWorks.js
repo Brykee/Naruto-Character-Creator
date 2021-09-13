@@ -7,7 +7,8 @@
 
 // Selection of DOM elements (CSS, ID, Name, etc)
 // $('.item1').css('color', 'blue');
-$('table').css('color', 'red');
+$('table td:even').css('color', 'white');
+$('table td:even').css('text-align', 'center');
 // $(':submit').css('color', 'red');
 // $('a[href="newpage.html"]').css('color', 'red');
 // Work with collections of elements
