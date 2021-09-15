@@ -21,7 +21,7 @@
           <a href="jutsuQuiz.html">Jutsu Quiz</a>
         </li>
         <li class="navpage" class="active">
-          <a href="register.html">Register</a>
+          <a href="register.html">Submit Design</a>
         </li>
       </ul>
     </nav>
@@ -29,21 +29,25 @@
   <body>
     <!-- inline CSS  -->
     <h1 style="color: rgb(19, 54, 54)">Submit your design!</h1>
-    <form action="register.html" method="GET" target="_self">
-      <input type="file" name="charFile" required /> <br />
+    <form action="https://formspree.io/f/xzbyoeey" method="POST" enctype=multipart/form-data>
+      Optional upload:
+      <input type="file" name="upload" accept="image/png, image/jpeg"/> <br />
       Character's First-name:
       <input
         class="typefields"
         type="text"
         name="firstname"
         required
-        maxlength="10"
+        maxlength="20"
       /><br />
       Character's Last-name:
-      <input class="typefields" type="text" name="lastname" required /><br />
-      Email:
-      <input class="typefields" type="email" name="email" required /><br />
-
+      <input
+        class="typefields"
+        type="text"
+        name="lastname"
+        required
+        maxlength="20"
+      /><br />
       Birthday: <input class="typefields" type="date" name="birthday" />
       <br />
       <div class="formbuttons">
@@ -51,22 +55,58 @@
         <input type="radio" name="gender" value="Male" />Male<br />
         <input type="radio" name="gender" value="Female" />Female<br />
         <input type="radio" name="gender" value="Other" />Other<br />
-        Pets:<br />
-        <input type="checkbox" name="cat" /> Cats<br />
-        <input type="checkbox" name="dog" /> Dogs<br />
-
-        Cars: <br />
+      </div>
+      <!-- Cars: <br />
         <select name="cars">
           <option value="Volvo" name="volvo">Volvo</option>
           <option value="Audi" name="audi">Audi</option>
           <option value="Toyota" name="Toyota">Toyota</option></select
-        ><br />
+        > -->
+      <br />
+
+      Village They Are From:
+      <input
+        class="typefields"
+        type="text"
+        name="village"
+        required
+      /><br />
+      Backstory:
+      <input
+        class="typefields"
+        type="text"
+        name="backstory"
+      /><br />
+      Personality:
+      <input
+        class="typefields"
+        type="text"
+        name="personality"
+      /><br />
+      Fighting Style and Jutsu:
+      <input
+        class="typefields"
+        type="text"
+        name="fighting style"
+      /><br />
+      Email:
+      <input
+        class="typefields"
+        type="email"
+        name="_replyto"
+        required
+        maxlength="30"
+        placeholder="yourEmail@here.com"
+      /><br />
+
+      <div class="formbuttons">
         <input id="cb" type="checkbox" name="verify" />I verify that I am
         human<br />
-        <input id="submit" type="submit" value="Register" />
+        <input id="submit" type="submit" value="Submit" />
         <input type="reset" />
       </div>
     </form>
+
     <script type="text/javascript" src="register.js"></script>
   </body>
 </html>
