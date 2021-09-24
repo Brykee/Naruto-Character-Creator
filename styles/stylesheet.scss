@@ -1,6 +1,8 @@
 // varibles for reusable code
 $bkgdColor: rgba(255, 255, 255, 0.8);
 $mainFont: #333;
+$fontStyle: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif,
+  TimesNewRoman;
 //modular code
 @import './grid';
 //@mixin /@extend to use partials(can overide too)
@@ -28,7 +30,7 @@ html {
 
 body {
   background-color: $bkgdColor;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: $fontStyle;
 }
 
 #topbar {
